@@ -1,7 +1,11 @@
 import "package:test/test.dart";
 
 bool negationValue(String str, bool val) {
-  return str.isEmpty||!val;
+  int count = str.length;
+  if (count%2==0) {
+    return val;
+  }
+  return !val;
 }
 
 void main() {
